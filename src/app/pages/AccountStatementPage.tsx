@@ -158,7 +158,7 @@ export default function AccountStatementPage() {
           {/* Statement Type */}
           <div className="flex flex-col gap-1.5">
             <label className="text-xs font-bold mr-1" style={{ color: 'var(--muted-foreground)' }}>نوع الكشف</label>
-            <div className="flex gap-1 p-1 rounded-xl" style={{ background: 'var(--muted)', border: '1px solid var(--border)' }}>
+            <div className="flex flex-wrap gap-1 p-1 rounded-xl" style={{ background: 'var(--muted)', border: '1px solid var(--border)' }}>
               <TypeToggle active={statementType === 'all'} onClick={() => {setStatementType('all'); setSelectedEntity('all');}} icon={Layout} label="عام" />
               <TypeToggle active={statementType === 'company'} onClick={() => {setStatementType('company'); setSelectedEntity('all');}} icon={Building2} label="شركات" />
               <TypeToggle active={statementType === 'vehicle'} onClick={() => {setStatementType('vehicle'); setSelectedEntity('all');}} icon={Truck} label="مركبات" />

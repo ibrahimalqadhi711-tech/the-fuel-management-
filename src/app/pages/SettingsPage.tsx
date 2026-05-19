@@ -121,7 +121,7 @@ export default function SettingsPage() {
           </div>
         </div>
 
-        <div className="grid grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
           {[
             { key: 'dark', label: t('dark_mode'), icon: Moon, desc: 'وضع ليلي' },
             { key: 'light', label: t('light_mode'), icon: Sun, desc: 'وضع نهاري' },

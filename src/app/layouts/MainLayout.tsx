@@ -24,9 +24,9 @@ export function MainLayout() {
       <Sidebar />
 
       {/* Main content */}
-      <div className="flex-1 flex flex-col min-w-0 relative" style={{ zIndex: 1 }}>
+      <div className="flex-1 flex flex-col min-w-0 relative w-full overflow-x-hidden" style={{ zIndex: 1 }}>
         <Navbar />
-        <main className="flex-1 overflow-auto p-4 lg:p-6">
+        <main className="flex-1 overflow-x-hidden overflow-y-auto p-4 lg:p-6 w-full max-w-full">
           <Outlet />
         </main>
       </div>
