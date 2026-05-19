@@ -116,7 +116,7 @@ export default function SubscriptionRequestsPage() {
           />
         </div>
         
-        <div className="flex items-center gap-2">
+        <div className="flex flex-wrap items-center gap-2">
           {['all', 'company', 'station'].map(t => (
             <button key={t} onClick={() => setFilterType(t)}
               className="px-4 py-2 rounded-lg text-xs font-bold transition-all"
@@ -279,7 +279,7 @@ export default function SubscriptionRequestsPage() {
 
               <div className="p-8 overflow-y-auto custom-scrollbar space-y-8">
                 {/* Info Grid */}
-                <div className="grid grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
                   <div className="space-y-4">
                     <h3 className="text-[12px] font-bold text-blue-500 uppercase tracking-wider">معلومات المنشأة</h3>
                     <div className="space-y-4">
@@ -328,7 +328,7 @@ export default function SubscriptionRequestsPage() {
                     </span>
                   </div>
                   
-                  <div className="grid grid-cols-3 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                     {selectedRequest.request_type === 'company' ? (
                       <>
                         <div className="text-center p-3 rounded-xl" style={{ background: 'var(--muted)' }}>

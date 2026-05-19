@@ -114,7 +114,7 @@ export default function StationsPage() {
             style={{ background: 'var(--muted)', border: '1px solid var(--border)', color: 'var(--foreground)', fontSize: '13px' }}
           />
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex flex-wrap items-center gap-2">
           {['all', 'active', 'pending', 'inactive'].map(s => (
             <button key={s}
               onClick={() => setFilterStatus(s)}

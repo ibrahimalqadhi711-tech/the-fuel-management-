@@ -78,7 +78,7 @@ export default function EmployeesPage() {
       </motion.div>
 
       {/* Stats */}
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         <div className="glass-card p-4 text-center">
           <div style={{ fontSize: '26px', fontWeight: 900, color: '#8b5cf6' }}>{myEmployees.length}</div>
           <div style={{ fontSize: '12px', color: 'var(--muted-foreground)' }}>إجمالي الموظفين</div>
